@@ -15,24 +15,28 @@ const Navbar = () => {
             className="w-full h-full object-contain rounded-full"
           /> */}
         </div>
-        <h1 className="text-white text-[25px] font-semibold">
-          Limo Kiprono{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
-            {" "}
-            io{" "}
-          </span>
-        </h1>
+        <a href="/">
+  <h1 className="text-white text-[25px] font-semibold">
+    Limo Kiprono{" "}
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+      {" "}
+      io{" "}
+    </span>
+  </h1>
+</a>
       </div>
 
       <div className="flex flex-row gap-5 mb-2">
         {Socials.map((social) => (
-          <Image
-            key={social.name}
-            src={social.src}
-            alt={social.name}
-            width={28}
-            height={28}
-          />
+          <a key={social.name} href={social.link} target="_blank" rel="noopener noreferrer">
+            <Image
+              key={social.name}
+              src={social.src}
+              alt={social.name}
+              width={28}
+              height={28}
+            />
+          </a>
         ))}
       </div>
     </div>

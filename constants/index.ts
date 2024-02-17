@@ -8,8 +8,8 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Css",
-    Image: "/css.png",
+    name: "Azure",
+    Image: "/azure.png",
     width: 80,
     height: 80,
   },
@@ -26,14 +26,14 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "React",
-    Image: "/react.png",
+    name: "Flutter",
+    Image: "/flutter.png",
     width: 80,
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
+    name: "Django",
+    Image: "/django.png",
     width: 80,
     height: 80,
   },
@@ -45,16 +45,16 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Next js 13",
+    name: "Next js 14",
     Image: "/next.png",
     width: 80,
     height: 80,
   },
   {
-    name: "Framer Motion",
-    Image: "/framer.png",
-    width: 80,
-    height: 80,
+    name: "Go",
+    Image: "/go.png",
+    width: 100,
+    height: 100,
   },
   {
     name: "Stripe Payment",
@@ -80,10 +80,17 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/instagram.svg",
+    link: "https://www.instagram.com/_limo.39/",
+  },
+  {
+    name: "Github",
+    src: "/github.png",
+    link: "https://github.com/limo39/",
   },
   {
     name: "X",
     src: "/x.png",
+    link: "https://twitter.com/limo_39",
   },
   {
     name: "discord",
@@ -92,23 +99,23 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Chess App",
+    text: "This is a flutter application",
     src: "/NextWebsite.png",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "UniverStudy Website",
+    text: "A social website made in Django.",
     src: "/SpaceWebsite.png",
   },
   {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Swahili",
+    text: "This is a go based Programming language in Swahili. It is an open source prject that is underway.",
     src: "/WebPortfolio.png",
   },
   {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Stoo",
+    text: "Ecommerce site built in Django framework.",
     src: "/Matrix.png",
   },
 ];
