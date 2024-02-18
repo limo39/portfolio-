@@ -93,8 +93,8 @@ export const Socials = [
     link: "https://twitter.com/limo_39",
   },
   {
-    name: "discord",
-    src: "/discord.svg",
+    name: "Linkedin",
+    src: "/linkedin.png",
   },
 ];
 export const Projects = [
