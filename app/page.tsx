@@ -23,7 +23,7 @@ export default function Home() {
           </h1>
           <p className="text-gray-200 hidden md:block">
             Hello, my name is Limo Kiprono.
-            Am a Software Engineer based in Kenya.
+            Am a full stack Software Engineer based in Kenya.
             I have more than 2 years of Software Development.
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
@@ -79,7 +79,17 @@ export default function Home() {
           Contact me
         </Link>
       </div>
+      <div className="absolute bottom-0 right-0 z-[10]">
+        <Image
+          src="/arap.jpg"
+          alt="horse"
+          height={300}
+          width={300}
+          className="absolute right-55 top-80"
+        />
 
+        <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
+      </div>
 
 
 

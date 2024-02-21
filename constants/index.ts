@@ -95,28 +95,29 @@ export const Socials = [
   {
     name: "Linkedin",
     src: "/linkedin.png",
+    link: "https://www.linkedin.com/in/limo-kiprono/",
   },
 ];
 export const Projects = [
   {
     title: "Chess App",
     text: "This is a flutter application",
-    src: "/NextWebsite.png",
+    src: "/chess.png",
   },
   {
     title: "UniverStudy Website",
     text: "A social website made in Django.",
-    src: "/SpaceWebsite.png",
+    src: "/universtudy.png",
   },
   {
     title: "Swahili",
     text: "This is a go based Programming language in Swahili. It is an open source prject that is underway.",
-    src: "/WebPortfolio.png",
+    src: "/swahili.png",
   },
   {
     title: "Stoo",
     text: "Ecommerce site built in Django framework.",
-    src: "/Matrix.png",
+    src: "/stoo.png",
   },
 ];
 
