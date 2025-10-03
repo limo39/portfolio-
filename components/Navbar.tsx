@@ -1,5 +1,6 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
             className="w-full h-full object-contain rounded-full"
           /> */}
         </div>
-        <a href="/">
+        <Link href="/">
           <h1 className="text-white text-[18px] sm:text-[20px] md:text-[25px] font-semibold">
             Limo Kiprono{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
@@ -23,7 +24,7 @@ const Navbar = () => {
               io{" "}
             </span>
           </h1>
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-row gap-3 sm:gap-5 mb-2">
