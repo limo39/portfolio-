@@ -8,8 +8,8 @@ const Page = () => {
   return (
     <div
     style={{backgroundColor: "black"}}
-     className='w-screen h-screen flex items-center justify-center bg-center bg-cover'>
-      <div className='grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%]'>
+     className='w-screen min-h-screen flex items-center justify-center bg-center bg-cover py-20 px-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[95%] sm:max-w-[90%] w-full'>
         {Projects.map((project, index) => (
           <ProjectCard
               key={index}

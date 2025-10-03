@@ -1,4 +1,4 @@
-import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+import { RxHome, RxPerson, RxDashboard, RxClipboard, RxReader } from "react-icons/rx";
 
 export const SkillData = [
   {
@@ -136,6 +136,11 @@ export const NavLinks = [
     name: "/my-projects",
     icon: RxDashboard,
     link: "/my-projects",
+  },
+  {
+    name: "/blog",
+    icon: RxReader,
+    link: "/blog",
   },
   {
     name: "/contact-me",

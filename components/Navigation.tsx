@@ -25,18 +25,14 @@ const Navigation = () => {
 
       return () => clearTimeout(timeout);
     }
-  }, [isRouting]);
+  }, [isRouting, path]);
   return (
-    <div
-      style={{ left: "20%" }}
-      className="absolute z-[50] -bottom-20 w-[50%] md:w-[20%] max-h-[150px] rounded-full flex justify-between items-center border bg-black border-white px-4 py-7"
-    >
-
+    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-[50] w-[320px] sm:w-[60%] md:w-[25%] max-h-[80px] rounded-full flex justify-between items-center border bg-black border-white px-4 py-4">
       {isRouting && <Transition />}
       {NavLinks.map((nav) => (
-        <Link key={nav.name} href={nav.link} className="mb-16 pl-4 min-w-[20%]">
+        <Link key={nav.name} href={nav.link} className="flex-1 flex justify-center items-center p-2">
           <nav.icon
-            className={`w-[24px] h-[24px] ${
+            className={`w-[18px] h-[18px] sm:w-[22px] sm:h-[22px] ${
               path === nav.name ? "text-purple-800" : "text-white"
             }`}
           />

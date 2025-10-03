@@ -8,24 +8,50 @@ import { Projects } from '@/constants'
 import React from 'react'
 export default function Home() {
   return (
-    <main className="w-screen h-screen relative">
+    <main className="w-screen min-h-screen relative">
       <div
-        className="flex items-center w-full h-full bg-cover bg-center"
+        className="flex items-center w-full min-h-screen bg-cover bg-center px-4 py-20"
         style={{ backgroundColor: "black" }}
       >
-        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-          <h1 className="text-[50px] text-white font-semibold">
+        <div className="pl-6 sm:pl-20 md:pl-40 pb-32 sm:pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[90%] sm:max-w-[750px]">
+          <h1 className="text-[28px] sm:text-[40px] md:text-[50px] text-white font-semibold leading-tight">
             Make anything possible with
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
               Software Development
             </span>
           </h1>
-          <p className="text-gray-200 hidden md:block">
+          <p className="text-gray-200 text-sm sm:text-base block">
             Hello, my name is Limo Kiprono.
             Am a full stack Software Engineer based in Kenya.
             I have more than 2 years of Software Development.
           </p>
+          <div className="flex-col md:flex-row flex md:hidden gap-4 mt-4">
+            <Link
+              href="/my-skills"
+              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px] text-center"
+            >
+              Learn more
+            </Link>
+            <Link
+              href="/my-projects"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] text-center"
+            >
+              My projects
+            </Link>
+            <Link
+              href="/blog"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] text-center"
+            >
+              Blog
+            </Link>
+            <Link
+              href="/contact-me"
+              className="rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px] text-center"
+            >
+              Contact me
+            </Link>
+          </div>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
@@ -35,51 +61,31 @@ export default function Home() {
             </Link>
             <Link
               href="/my-projects"
-              className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               My projects
             </Link>
             <Link
-              href="/#"
-              className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+              href="/blog"
+              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Blog
             </Link>
             <Link
               href="/contact-me"
-              className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Contact me
             </Link>
           </div>
         </div>
       </div>
 
-      <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
-        <Link
-          href="/my-skills"
-          className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          Learn more
-        </Link>
 
-        <Link
-          href="/my-projects"
-          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          My projects
-        </Link>
-        <Link
-          href="/contact-me"
-          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          Contact me
-        </Link>
-      </div>
-      <div className="absolute bottom-0 right-0 z-[10]">
+      <div className="absolute bottom-0 right-0 z-[10] hidden md:block">
         <Image
           src="/arap.jpg"
           alt="horse"
