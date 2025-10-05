@@ -54,8 +54,10 @@ This project is optimized for Vercel deployment with Node.js 22.x:
 
 1. Push your code to GitHub
 2. Connect your repository to Vercel
-3. Vercel will automatically detect the Node.js 22.x requirement from `vercel.json`
+3. Vercel will automatically detect the Node.js 22.x requirement from `package.json` engines field
 4. Deploy with zero configuration
+
+**Note**: Make sure your Vercel project settings use Node.js 22.x runtime
 
 ### Manual Deployment
 

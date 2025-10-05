@@ -24,7 +24,7 @@ export default function Home() {
           <p className="text-gray-200 text-sm sm:text-base block">
             Hello, my name is Limo Kiprono.
             Am a full stack Software Engineer based in Kenya.
-            I have more than 2 years of Software Development.
+            I have more than 4 years of Software Development.
           </p>
           <div className="flex-col md:flex-row flex md:hidden gap-4 mt-4">
             <Link
