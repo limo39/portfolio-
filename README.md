@@ -9,7 +9,8 @@ A modern, responsive portfolio website built with Next.js 15, React 18, and Tail
 - **Interactive Components**: Animated project cards, smooth transitions
 - **Blog Section**: Showcase of projects and technical articles
 - **GitHub Integration**: Direct links to repositories and project stats
-- **Contact Form**: Easy way for visitors to get in touch
+- **Contact Form**: Functional contact form with EmailJS integration
+- **Email Notifications**: Receive messages directly in your email
 
 ## 🛠️ Tech Stack
 
@@ -39,12 +40,17 @@ cd portfolio
 npm install
 ```
 
-3. Run the development server:
+3. Set up EmailJS for contact form:
+   - Follow the detailed guide in `EMAILJS_SETUP.md`
+   - Create `.env.local` with your EmailJS credentials
+   - Configure your email service and template
+
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🚀 Deployment
 
