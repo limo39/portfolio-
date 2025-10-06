@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
@@ -13,6 +13,15 @@ const ContactForm = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Initialize EmailJS
+  useEffect(() => {
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    if (publicKey) {
+      emailjs.init(publicKey);
+      console.log('EmailJS initialized with public key');
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -31,6 +40,12 @@ const ContactForm = () => {
       const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
+      console.log('EmailJS Config Check:', {
+        serviceId: serviceId ? 'Set' : 'Missing',
+        templateId: templateId ? 'Set' : 'Missing',
+        publicKey: publicKey ? 'Set' : 'Missing'
+      });
+
       if (!serviceId || !templateId || !publicKey) {
         throw new Error('EmailJS configuration is missing. Please check your environment variables.');
       }
@@ -41,17 +56,18 @@ const ContactForm = () => {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        project_type: formData.projectType,
-        to_name: 'Limo Kiprono', // Your name
+        project_type: formData.projectType || 'Not specified',
+        to_name: 'Limo Kiprono',
         reply_to: formData.email,
       };
+
+      console.log('Sending email with params:', templateParams);
 
       // Send email using EmailJS
       const response = await emailjs.send(
         serviceId,
         templateId,
-        templateParams,
-        publicKey
+        templateParams
       );
 
       console.log('Email sent successfully:', response);
@@ -66,7 +82,7 @@ const ContactForm = () => {
         projectType: ""
       });
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('Detailed error sending email:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -241,7 +257,7 @@ const ContactForm = () => {
           <div className="p-4 bg-gray-800 rounded-lg border border-gray-700">
             <h3 className="text-white font-semibold mb-2">Direct Email</h3>
             <a 
-              href="mailto:limo.kiprono@example.com" 
+              href="mailto:kipronolimo39@gmail.com" 
               className="text-purple-400 hover:text-purple-300 transition-colors"
             >
               kipronolimo39@gmail.com
