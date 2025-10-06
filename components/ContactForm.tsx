@@ -218,8 +218,8 @@ const ContactForm = () => {
                 <p className="font-medium">Failed to send message.</p>
                 <p className="text-sm mt-1">
                   Please try again or contact me directly at{" "}
-                  <a href="mailto:limo.kiprono@example.com" className="underline hover:text-red-300">
-                    limo.kiprono@example.com
+                  <a href="mailto:kipronolimo39@gmail.com" className="underline hover:text-red-300">
+                    kipronolimo39@gmail.com
                   </a>
                 </p>
               </div>
@@ -244,7 +244,7 @@ const ContactForm = () => {
               href="mailto:limo.kiprono@example.com" 
               className="text-purple-400 hover:text-purple-300 transition-colors"
             >
-              limo.kiprono@example.com
+              kipronolimo39@gmail.com
             </a>
           </div>
           
