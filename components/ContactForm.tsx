@@ -81,8 +81,26 @@ const ContactForm = () => {
         message: "",
         projectType: ""
       });
-    } catch (error) {
+    } catch (error: any) {
       console.error('Detailed error sending email:', error);
+      console.error('Error details:', {
+        message: error.message,
+        status: error.status,
+        text: error.text,
+        name: error.name
+      });
+      
+      // Show more specific error message
+      if (error.status === 400) {
+        console.error('EmailJS 400 Error: Check template variables');
+      } else if (error.status === 401) {
+        console.error('EmailJS 401 Error: Check public key and service configuration');
+      } else if (error.status === 402) {
+        console.error('EmailJS 402 Error: Quota exceeded');
+      } else if (error.status === 404) {
+        console.error('EmailJS 404 Error: Service or template not found');
+      }
+      
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

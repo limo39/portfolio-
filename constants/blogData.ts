@@ -113,7 +113,7 @@ export const featuredRepos: GitHubRepo[] = [
 export const githubStats = {
   username: "limo39",
   profileUrl: "https://github.com/limo39/",
-  totalRepos: 74,
+  totalRepos: 75,
   totalStars: 10,
   totalForks: 4,
   contributions: 50,

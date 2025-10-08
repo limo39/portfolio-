@@ -101,23 +101,35 @@ export const Socials = [
 export const Projects = [
   {
     title: "Chess App",
-    text: "This is a flutter application",
+    text: "A fully functional chess game built with Flutter featuring custom game logic, beautiful UI, and smooth animations.",
     src: "/chess.png",
+    githubUrl: "https://github.com/limo39/chess-flutter",
+    technologies: ["Flutter", "Dart", "Game Development"],
+    status: "Completed"
   },
   {
     title: "UniverStudy Website",
-    text: "A social website made in Django.",
+    text: "A comprehensive social learning platform built with Django, featuring user authentication, course management, and interactive discussions.",
     src: "/universtudy.png",
+    githubUrl: "https://github.com/limo39/universtudy-website",
+    technologies: ["Django", "Python", "PostgreSQL", "Bootstrap"],
+    status: "Completed"
   },
   {
-    title: "Swahili",
-    text: "This is a go based Programming language in Swahili. It is an open source prject that is underway.",
+    title: "Swahili Programming Language",
+    text: "An innovative programming language written in Go that uses Swahili syntax, making coding more accessible to Swahili speakers across East Africa.",
     src: "/swahili.png",
+    githubUrl: "https://github.com/limo39/swahili-lang",
+    technologies: ["Go", "Compiler Design", "Language Development"],
+    status: "In Progress"
   },
   {
-    title: "Stoo",
-    text: "Ecommerce site built in Django framework.",
+    title: "Stoo E-commerce Platform",
+    text: "A full-featured e-commerce platform built with Django, featuring product management, payment integration, and order tracking.",
     src: "/stoo.png",
+    githubUrl: "https://github.com/limo39/stoo-ecommerce",
+    technologies: ["Django", "Python", "Stripe", "PostgreSQL"],
+    status: "Completed"
   },
 ];
 
