@@ -103,7 +103,7 @@ export const Projects = [
     title: "Chess App",
     text: "A fully functional chess game built with Flutter featuring custom game logic, beautiful UI, and smooth animations.",
     src: "/chess.png",
-    githubUrl: "https://github.com/limo39/chess-flutter",
+    githubUrl: "https://github.com/limo39/chessUI",
     technologies: ["Flutter", "Dart", "Game Development"],
     status: "Completed"
   },
@@ -111,7 +111,7 @@ export const Projects = [
     title: "UniverStudy Website",
     text: "A comprehensive social learning platform built with Django, featuring user authentication, course management, and interactive discussions.",
     src: "/universtudy.png",
-    githubUrl: "https://github.com/limo39/universtudy-website",
+    githubUrl: "https://github.com/limo39/UniverStudy",
     technologies: ["Django", "Python", "PostgreSQL", "Bootstrap"],
     status: "Completed"
   },
@@ -119,7 +119,7 @@ export const Projects = [
     title: "Swahili Programming Language",
     text: "An innovative programming language written in Go that uses Swahili syntax, making coding more accessible to Swahili speakers across East Africa.",
     src: "/swahili.png",
-    githubUrl: "https://github.com/limo39/swahili-lang",
+    githubUrl: "https://github.com/limo39/kwenda",
     technologies: ["Go", "Compiler Design", "Language Development"],
     status: "In Progress"
   },
@@ -127,7 +127,7 @@ export const Projects = [
     title: "Stoo E-commerce Platform",
     text: "A full-featured e-commerce platform built with Django, featuring product management, payment integration, and order tracking.",
     src: "/stoo.png",
-    githubUrl: "https://github.com/limo39/stoo-ecommerce",
+    githubUrl: "https://github.com/limo39/ecommerce-site",
     technologies: ["Django", "Python", "Stripe", "PostgreSQL"],
     status: "Completed"
   },
