@@ -9,10 +9,7 @@ import { Socials } from "@/constants";
 
 const Page = () => {
   return (
-    <div
-      style={{ backgroundColor: "black" }}
-      className="w-screen min-h-screen bg-cover bg-center py-20 px-4"
-    >
+    <div className="page-bg bg-cover bg-center py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <AnimatedSection className="text-center mb-12">
