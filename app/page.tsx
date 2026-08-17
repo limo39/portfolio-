@@ -1,105 +1,117 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
-import ProjectCard from '@/components/ProjectCard'
-import { Projects } from '@/constants'
-import React from 'react'
 export default function Home() {
   return (
-    <main className="w-screen min-h-screen relative">
+    <main className="page-bg relative overflow-hidden flex items-center min-h-screen">
+      {/* Glow orbs */}
+      <div className="glow-orb w-[500px] h-[500px] bg-purple-600 opacity-20 top-[-100px] left-[-150px]" />
+      <div className="glow-orb w-[400px] h-[400px] bg-red-500 opacity-15 bottom-[-80px] right-[-100px]" />
+      <div className="glow-orb w-[300px] h-[300px] bg-blue-500 opacity-10 top-[40%] left-[40%]" />
+
+      {/* Grid texture overlay */}
       <div
-        className="flex items-center w-full min-h-screen bg-cover bg-center px-4 py-20"
-        style={{ backgroundColor: "black" }}
-      >
-        <div className="pl-6 sm:pl-20 md:pl-40 pb-32 sm:pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[90%] sm:max-w-[750px]">
-          <h1 className="text-[28px] sm:text-[40px] md:text-[50px] text-white font-semibold leading-tight">
-            Make anything possible with
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
-              {" "}
-              Software Development
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-between px-6 sm:px-16 md:px-24 lg:px-40 pt-24 pb-32 md:py-0 gap-12">
+        {/* Left: text */}
+        <div className="flex flex-col gap-6 max-w-[600px] w-full animate-fade-in-up">
+          {/* Availability badge */}
+          <div className="flex items-center gap-2 w-fit bg-gray-900 border border-gray-700 rounded-full px-4 py-2">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+            <span className="text-green-400 text-sm font-medium">
+              Available for work
             </span>
+          </div>
+
+          <h1 className="text-[32px] sm:text-[44px] md:text-[56px] text-white font-bold leading-tight">
+            Make anything possible with{" "}
+            <span className="gradient-text-animated">Software Development</span>
           </h1>
-          <p className="text-gray-200 text-sm sm:text-base block">
-            Hello, my name is Limo Kiprono.
-            Am a full stack Software Engineer based in Kenya.
-            I have more than 4 years of Software Development.
+
+          <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
+            Hi, I&apos;m{" "}
+            <span className="text-white font-semibold">Limo Kiprono</span> — a
+            full stack Software Engineer based in{" "}
+            <span className="text-white font-semibold">Nairobi, Kenya</span>{" "}
+            with 5+ years of experience building web apps, mobile apps, and
+            developer tools.
           </p>
-          <div className="flex-col md:flex-row flex md:hidden gap-4 mt-4">
-            <Link
-              href="/my-skills"
-              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px] text-center"
-            >
-              Learn more
-            </Link>
+
+          {/* Stats row */}
+          <div className="flex gap-8 py-4 border-t border-gray-800">
+            <div>
+              <div className="text-2xl font-bold text-white">5+</div>
+              <div className="text-gray-500 text-sm">Years experience</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-white">10+</div>
+              <div className="text-gray-500 text-sm">Projects shipped</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-white">4</div>
+              <div className="text-gray-500 text-sm">Languages</div>
+            </div>
+          </div>
+
+          {/* CTA buttons */}
+          <div className="flex flex-wrap gap-4">
             <Link
               href="/my-projects"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] text-center"
+              className="bg-gradient-to-r from-purple-600 to-red-500 hover:from-purple-500 hover:to-red-400 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:shadow-purple-500/30"
             >
-              My projects
+              View Projects
             </Link>
             <Link
-              href="/blog"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px] text-center"
+              href="/my-skills"
+              className="bg-transparent border border-gray-600 hover:border-purple-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:text-purple-300"
             >
-              Blog
+              My Skills
             </Link>
             <Link
               href="/contact-me"
-              className="rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px] text-center"
+              className="bg-transparent border border-gray-600 hover:border-blue-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:text-blue-300"
             >
-              Contact me
+              Contact Me
             </Link>
           </div>
-          <div className="flex-col md:flex-row hidden md:flex gap-5">
-            <Link
-              href="/my-skills"
-              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
-            >
-              Learn more
-            </Link>
-            <Link
-              href="/my-projects"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
-            >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-              My projects
-            </Link>
-            <Link
-              href="/blog"
-              className="rounded-[20px] group relative bg-transparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
-            >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-              Blog
-            </Link>
-            <Link
-              href="/contact-me"
-              className="rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
-            >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-              Contact me
-            </Link>
+        </div>
+
+        {/* Right: profile image */}
+        <div
+          className="hidden md:flex flex-shrink-0 relative animate-fade-in"
+          style={{ animationDelay: "0.3s", animationFillMode: "both" }}
+        >
+          {/* Decorative ring */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-600 to-red-500 opacity-30 blur-2xl scale-110" />
+          <div className="relative w-[280px] h-[280px] lg:w-[340px] lg:h-[340px] rounded-full overflow-hidden border-2 border-gray-700 shadow-2xl shadow-purple-900/40">
+            <Image
+              src="/arap.jpg"
+              alt="Limo Kiprono"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </div>
 
-
-      <div className="absolute bottom-0 right-0 z-[10] hidden md:block">
-        <Image
-          src="/arap.jpg"
-          alt="horse"
-          height={300}
-          width={300}
-          className="absolute right-55 top-80"
-        />
-
-        <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
+      {/* Scroll indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+        <span className="text-white text-xs tracking-widest uppercase">
+          Scroll
+        </span>
+        <div className="w-px h-8 bg-gradient-to-b from-white to-transparent" />
       </div>
-
-
-
-
     </main>
   );
 }
