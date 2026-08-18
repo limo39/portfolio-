@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 15, React 18, and Tailwind CSS.
 
-## 🚀 Features
+##  Features
 
 - **Responsive Design**: Optimized for all devices from mobile to desktop
 - **Modern Tech Stack**: Next.js 15, React 18, TypeScript, Tailwind CSS
@@ -12,7 +12,7 @@ A modern, responsive portfolio website built with Next.js 15, React 18, and Tail
 - **Contact Form**: Functional contact form with EmailJS integration
 - **Email Notifications**: Receive messages directly in your email
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework**: Next.js 15.5.4
 - **Runtime**: Node.js 22.x
@@ -22,12 +22,12 @@ A modern, responsive portfolio website built with Next.js 15, React 18, and Tail
 - **Icons**: React Icons 5.3.0
 - **Carousel**: Swiper 11.1.14
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Node.js 22.0.0 or higher
 - npm 10.0.0 or higher
 
-## 🔧 Installation
+##  Installation
 
 1. Clone the repository:
 ```bash
@@ -52,7 +52,7 @@ npm run dev
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🚀 Deployment
+##  Deployment
 
 ### Vercel (Recommended)
 
@@ -77,7 +77,7 @@ npm run build
 npm start
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── app/                    # Next.js app directory
@@ -103,7 +103,7 @@ npm start
 └── package.json           # Dependencies and scripts
 ```
 
-## 🎨 Customization
+##  Customization
 
 ### Adding New Projects
 
@@ -144,28 +144,28 @@ Edit `constants/index.ts` to update social media links in the `Socials` array.
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 - **Mobile**: < 640px
 - **Tablet**: 640px - 768px
 - **Desktop**: > 768px
 
-## 🌟 Performance Optimizations
+##  Performance Optimizations
 
 - **Image Optimization**: Next.js Image component with WebP/AVIF support
 - **Package Optimization**: Optimized imports for react-icons and framer-motion
 - **Static Generation**: All pages are statically generated for optimal performance
 - **Modern JavaScript**: ES2022 target for better performance
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-## 📞 Contact
+##  Contact
 
 - **GitHub**: [limo39](https://github.com/limo39/)
 - **LinkedIn**: [Limo Kiprono](https://www.linkedin.com/in/limo-kiprono/)
